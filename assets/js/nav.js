@@ -2,15 +2,15 @@
 const navToggle = document.querySelector('.mobile-nav-toggle');
 const linksList = document.getElementById('header');
 const links = document.querySelectorAll('.link');
-console.log(links);
 
+// Display/Hide navigation header when click on hamburger button
 navToggle.addEventListener("click", () => {
     linksList.classList.toggle("show-links");
     navToggle.classList.toggle("show-links");
 });
 
+// Close
 links.forEach( link => {
-    console.log(link);
     link.addEventListener("click", () => {
         linksList.classList.toggle("show-links");
         navToggle.classList.toggle("show-links");

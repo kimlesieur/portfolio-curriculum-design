@@ -1,21 +1,23 @@
 const projects = [
     {
         id: 1,
-        projectName: "Projet 1",
-        stack: "HTML/CSS",
-        img: "./assets/img/project-1.jpg",
-        keywords: "Express Router, Authentication",
+        projectName: "Groooving",
+        stack: "Node.js, Express, React, API Spotify",
+        img: "./assets/img/portfolio/grooooving-screenshot.png",
+        keywords: "Créer un front avec React, Connecter une API tierce",
         text:
-            "Un projet de développement web axé sur les technologies HTML & CSS",
+            "Une application web permettant de créer une playlist et l'enregistrer sur son compte Spotify.",
+        url : "https://github.com/kimlesieur/grooooving-spotify-app"
     },
     {
         id: 2,
-        projectName: "Projet 2",
+        projectName: "API REST pour e-commerce",
         stack: "HTML/CSS & JavaScript",
-        img: "./assets/img/project-5.jpg",
-        keywords: "Dynamic selection App",
+        img: "./assets/img/portfolio/API-REST.png",
+        keywords: "Concevoir une API REST de bout en bout avec documentation.",
         text: 
-            "A new project with much value",
+            "Conçue dans le cadre d'un projet e-commerce full stack. L'API contrôle tout l'aspect back end avec envoi des données depuis la base de données. Une documentation sur son fonctionnement et les routes exploitables est disponible. ",
+        url : 'https://github.com/kimlesieur/ecommerce-app-REST-API'
     },
     {
         id: 3,
@@ -44,10 +46,12 @@ const projectName = document.getElementById("project-name");
 const stack = document.getElementById("stack");
 const keywords = document.getElementById("keywords");
 const sumary = document.getElementById("sumary");
+const link = document.getElementById("project-link")
 
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
 
+console.log(link);
 
 // set starting item
 let currentItem = 0;
@@ -60,6 +64,7 @@ window.addEventListener("DOMContentLoaded", function () {
   stack.textContent = item.stack;
   keywords.textContent = item.keywords;
   sumary.textContent = item.text;
+  link.href = item.url;
 });
 
 // show project based on current number
@@ -118,9 +123,9 @@ if (typed) {
     new Typed('.typed', {
       strings: typed_strings,
       loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
+      typeSpeed: 50,
+      backSpeed: 30,
+      backDelay: 200
     });
   }
 

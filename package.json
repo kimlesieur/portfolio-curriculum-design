@@ -8,8 +8,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "typed.js": "^2.0.12"
-  }
+  "license": "ISC"
 }

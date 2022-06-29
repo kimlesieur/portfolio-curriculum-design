@@ -2,7 +2,7 @@
 # Reset Stylesheet
 --------------------------------------------------------------*/
 
-ul, li, section, h1, h2, h3, h4, h5, h6 {
+ul, li, p, section, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
@@ -28,9 +28,12 @@ body {
     font-family: "Raleway", sans-serif;
   }
 
+  p {
+    margin: 2vh 0;
+  }
+
 .container {
   z-index: 2;
- 
 
 }
 
@@ -422,13 +425,13 @@ section {
 
 .skill-img {
   margin: 2vh auto;
-  padding: 5%;
-  width: 50%;
+  padding: 10%;
+  width: 30%;
   background-color: #ffffff;
   border-radius: 100px;
 }
 
-.skill-card img {
+.skill-icon {
   width: 100%;
 }
 
@@ -501,11 +504,31 @@ section {
   opacity: 1;
 }
 
+#project-button {
+  width: 100%;
+  margin: 0 auto;
+  background-color:#cc3330;
+}
+
+#project-link {
+  color: white;
+  text-decoration: none;
+}
+
+#project-link-container {
+  width: 40%;
+  margin: 4vh auto;
+}
+
 .portfolio-card {
   width: 700px;
-  margin: 2vh 5vw;
+  margin: 0 2vw;
   background-color: rgb(248, 248, 248);
   border-radius: 8px;
+}
+
+.portfolio-card ul {
+  padding-left: 10vw;
 }
 
 .portfolio-img {
@@ -522,6 +545,10 @@ section {
 .portfolio-text {
   width: 60%;
   margin: 1vh auto;
+}
+
+.portfolio-text > p {
+  text-align: center;
 }
 
 
@@ -603,9 +630,11 @@ section {
 
 #footer {
   background-color: var(--main-color);
+  opacity: 0.8;
 }
 
 .copyright {
   color: white;
   text-align: center;
+  padding: 5vh 0vw;
 }
