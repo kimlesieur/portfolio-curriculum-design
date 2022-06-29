@@ -92,7 +92,7 @@ nextBtn.addEventListener("click", function () {
 });
 
 
-import Typed from '../../node_modules/typed.js/src/typed.js';
+import Typed from '../vendor/typed/typed2.js';
 
 (function() {
   
