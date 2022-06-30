@@ -21,22 +21,34 @@ const projects = [
     },
     {
         id: 3,
-        projectName: "Projet 3",
-        stack: "JavaScript",
-        img: "./assets/img/project-3.png",
-        keywords: "REST API",
+        projectName: "Reddit Client - Minimal app",
+        stack: "Node.js, React, Redux Tool Kit",
+        img: "./assets/img/portfolio/reddit-client-minimal-app.png",
+        keywords: "Fetch de données via une API et thunks asynchrones",
         text: 
-            "A new API REST",
+            "Une application web pour consulter certains fils Subreddits.",
+        url: "https://github.com/kimlesieur/Reddit-client"
     },
     {
         id: 4,
-        projectName: "Projet 4",
-        stack: "HTML",
-        img: "./assets/img/project-4.png",
-        keywords: "Web App",
+        projectName: "Dognation",
+        stack: "Dognation, Express, EJS, bcrypt",
+        img: "./assets/img/portfolio/dognation.png",
+        keywords: "Stratégie d'authentification locale à l'aide la librairie Passport.",
         text: 
-            "Web app project",
-    }
+            "La structure globale est basé sur Express pour router les URLs et les templates HTML sont conçus avec EJS. L'authentification est géré en sessions à l'aide de Passport avec des données en local (version de développement).",
+        url: "https://github.com/kimlesieur/dognation"
+    },
+    {
+      id: 5,
+      projectName: "Le p'tit Bocal",
+      stack: "PHP, Smarty, MySQL, Hébergement OVH",
+      img: "./assets/img/portfolio/leptitbocal-capture-ecran.png",
+      keywords: "Plateforme e-commerce montée avec Prestashop.",
+      text: 
+          "Site de vente en ligne de produits zéro déchet pour l'entretien de la maison. Projet en production.",
+      url: "https://leptitbocal.fr/"
+  }
 ]
 
 
@@ -75,6 +87,7 @@ function showProject(num) {
   stack.textContent = item.stack;
   sumary.textContent = item.text;
   keywords.textContent = item.keywords;
+  link.href = item.url;
 }
 
 // show prev project
